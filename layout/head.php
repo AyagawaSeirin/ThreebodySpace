@@ -5,3 +5,4 @@
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/fullpage/fullpage.js"></script>
     <link rel="stylesheet" href="/fullpage/fullpage.css">
+    <link rel="stylesheet" href="/css/lightfont.css">
