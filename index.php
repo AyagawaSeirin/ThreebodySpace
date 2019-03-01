@@ -95,14 +95,14 @@
         padding-right: 5vw;
     }
 
-    #section_introduce h1 {
+     h1 {
         padding-top: 5vh;
         font-size: 56px;
         font-weight: 320;
         text-shadow: h-shadow v-shadow blur color;
     }
 
-    #section_introduce h2 {
+     h2 {
         /*padding-top:10vh;*/
         /*font-size: 56px;*/
         font-weight: 400;
@@ -140,6 +140,13 @@
     #section_video_slide2 {
         background-image: url(img/4.jpg);
         padding: 6% 0 0 0;
+    }
+
+    #section_article{
+        background-image: url(/img/5.png);
+        text-align: left;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     /* Bottom menu
@@ -198,8 +205,7 @@
             <!--            <h1>Slide Backgrounds</h1>-->
             <div class="video_div">
                 <div class="mdui-video-container">
-                    <iframe src="//player.bilibili.com/player.html?aid=26206476&cid=44977752&page=1" scrolling="no"
-                            border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<!--                    <iframe src="//player.bilibili.com/player.html?aid=26206476&cid=44977752&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>-->
                 </div>
             </div>
         </div>
@@ -208,13 +214,15 @@
             <!--            <h1>Slide Backgrounds</h1>-->
             <div class="video_div">
                 <div class="mdui-video-container">
-                    <iframe src="//player.bilibili.com/player.html?aid=20523785&cid=33561210&page=1" scrolling="no"
-                            border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<!--                    <iframe src="//player.bilibili.com/player.html?aid=20523785&cid=33561210&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>-->
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" id="section2"><h1>Lovely images <br/>for a lovely page</h1></div>
+    <div class="section" id="section_article">
+        <div class="mdui-typo"><h1>相关文章</h1></div>
+
+    </div>
     <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
 </div>
 
