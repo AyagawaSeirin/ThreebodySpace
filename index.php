@@ -43,135 +43,6 @@
 <!--<!--    <img src="/img/1.jpg" class="top-img-img">-->
 <!--    <div class="top-img-img"></div>-->
 <!--</div>-->
-<style>
-
-    /* Style for our header texts
-    * --------------------------------------- */
-    h1 {
-        /*font-size: 5em;*/
-        /*font-family: arial,helvetica;*/
-        color: #fff;
-        margin: 0 !important;
-        padding: 0;
-        color: white !important;
-    }
-
-    /* Centered texts in each section
-    * --------------------------------------- */
-    .section {
-        text-align: center;
-    }
-
-    /* Backgrounds will cover all the section
-    * --------------------------------------- */
-    .section {
-        background-size: cover;
-    }
-
-    .slide {
-        background-size: cover;
-    }
-
-    /* Defining each section background and styles
-    * --------------------------------------- */
-    #section_index {
-        background-image: url(/img/1.jpg);
-    }
-
-    #section_index h1 {
-        /*top: 50%;*/
-        /*transform: translateY(-50%);*/
-        /*position: relative;*/
-        padding-top: 30vh;
-        font-size: 56px;
-        font-weight: 320;
-        text-shadow: h-shadow v-shadow blur color;
-    }
-
-    #section_introduce {
-        background-image: url(/img/2.jpg);
-        text-align: left;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-     h1 {
-        padding-top: 5vh;
-        font-size: 56px;
-        font-weight: 320;
-        text-shadow: h-shadow v-shadow blur color;
-    }
-
-     h2 {
-        /*padding-top:10vh;*/
-        /*font-size: 56px;*/
-        font-weight: 400;
-        color: white;
-    }
-
-    #section2 {
-        background-image: url(imgs/bg3.jpg);
-        padding: 6% 0 0 0;
-    }
-
-    #section3 {
-        background-image: url(imgs/bg4.jpg);
-        padding: 6% 0 0 0;
-    }
-
-    #section3 h1 {
-        color: #000;
-    }
-
-    /*Adding background for the slides
-    * --------------------------------------- */
-    .video_div {
-        padding-left: 20vw;
-        padding-right: 20vw;
-
-    }
-
-    #section_video_slide1 {
-        /*background-image: url(imgs/bg2.jpg);*/
-        background-image: url(img/3.jpg);
-        padding: 6% 0 0 0;
-    }
-
-    #section_video_slide2 {
-        background-image: url(img/4.jpg);
-        padding: 6% 0 0 0;
-    }
-
-    #section_article{
-        background-image: url(/img/5.png);
-        text-align: left;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-    /* Bottom menu
-    * --------------------------------------- */
-    #infoMenu li a {
-        color: #fff;
-    }
-
-    .blue h1 {
-        text-decoration: none !important;
-        -webkit-transition: all 0.5s !important;
-        -moz-transition: all 0.5s !important;
-        transition: all 0.5s !important;
-
-        -webkit-animation: neon2 1.5s ease-in-out infinite alternate !important;
-        -moz-animation: neon2 1.5s ease-in-out infinite alternate !important;
-        animation: neon2 1.5s ease-in-out infinite alternate !important;
-
-        /*font-size:1.5em;*/
-        /*color:#228DFF;*/
-        /*font-family:Iceland;*/
-    }
-
-
-</style>
 
 <div id="fullpage">
     <!--第一页 - 标题-->
@@ -223,13 +94,44 @@
         <div class="mdui-typo"><h1>相关文章</h1></div>
 
     </div>
-    <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+    <div class="section" id="section_good_text">
+        <div class="mdui-typo"><h1>书中好句</h1></div>
+
+        <div class="mdui-typo"><h4 style="color:white;" id="good_text">
+                正在加载好句...
+            </h4></div>
+        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo" onclick="load_text();">换一句</button>
+
+    </div>
+    <div class="section" id="section_about">
+        <div class="mdui-typo"><h1>关于本站</h1></div>
+
+        <div class="mdui-typo"><h4 style="color:white;">
+            首先，欢迎你访问本站噢~
+            </h4></div>
+
+    </div>
+
+<!--    <script src="/sentence/sentence.php" defer></script>-->
 </div>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         verticalCentered: false
     });
+    load_text();
+    function load_text() {
+        $.ajax({
+            url: "/sentence/sentence.php",
+            async: true,
+            type: 'GET',
+            success: function (data) {
+                var dom=document.querySelector('#good_text');
+                dom.innerText=data;
+            }
+        });
+    }
+
 </script>
 
 </body>

@@ -6,4 +6,6 @@ fclose($myfile);
 //echo $all_sentence;
 $list = explode("|", $all_sentence);
 $count = count($list) - 1;
-echo $list[rand(0, $count)];
+$sentence = $list[rand(0, $count)];
+$sentence = str_replace("<br/>","\n",$sentence);
+echo $sentence;

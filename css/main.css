@@ -1,0 +1,140 @@
+
+/* Style for our header texts
+* --------------------------------------- */
+h1 {
+    /*font-size: 5em;*/
+    /*font-family: arial,helvetica;*/
+    color: #fff;
+    margin: 0 !important;
+    padding: 0;
+    color: white !important;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+    text-align: center;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section {
+    background-size: cover;
+}
+
+.slide {
+    background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section_index {
+    background-image: url(/img/1.jpg);
+}
+
+#section_index h1 {
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*position: relative;*/
+    padding-top: 30vh;
+    font-size: 56px;
+    font-weight: 320;
+    text-shadow: h-shadow v-shadow blur color;
+}
+
+#section_introduce {
+    background-image: url(/img/2.jpg);
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+h1 {
+    padding-top: 5vh;
+    font-size: 56px;
+    font-weight: 320;
+    text-shadow: h-shadow v-shadow blur color;
+}
+
+h2 {
+    /*padding-top:10vh;*/
+    /*font-size: 56px;*/
+    font-weight: 400;
+    color: white;
+}
+
+#section2 {
+    background-image: url(imgs/bg3.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section3 {
+    background-image: url(imgs/bg4.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section3 h1 {
+    color: #000;
+}
+
+/*Adding background for the slides
+* --------------------------------------- */
+.video_div {
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+}
+
+#section_video_slide1 {
+    /*background-image: url(imgs/bg2.jpg);*/
+    background-image: url(/img/3.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section_video_slide2 {
+    background-image: url(/img/4.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section_article{
+    background-image: url(/img/5.png);
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#section_good_text{
+    background-image: url(/img/6.jpg);
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+#section_about{
+    background-image: url(/img/7.jpg);
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+#section_about h1{
+    text-align: center;
+}
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
+
+.blue h1 {
+    text-decoration: none !important;
+    -webkit-transition: all 0.5s !important;
+    -moz-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate !important;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate !important;
+    animation: neon2 1.5s ease-in-out infinite alternate !important;
+
+    /*font-size:1.5em;*/
+    /*color:#228DFF;*/
+    /*font-family:Iceland;*/
+}
