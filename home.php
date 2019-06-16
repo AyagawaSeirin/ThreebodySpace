@@ -3,47 +3,9 @@
     <?php require_once("layout/head.php"); ?>
 </head>
 <body>
-<style>
-    /*.top-img-img {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*z-index: -1;*/
-    /*background-repeat:repeat-x;*/
-    /*background-repeat:repeat-y;*/
-    /*background-image: url("/img/1.jpg");*/
-    /*background-position: center center;*/
-    /*background-size: cover;*/
-    /*}*/
-
-    /*.top-img {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*text-align: center;*/
-    /*color: white;*/
-    /*}*/
-    .top-img p {
-        /*text-align: center;*/
-        /*color:white;*/
-    }
-
-    .top-img-text {
-        /*padding-top:15%;*/
-    }
-</style>
-<!--<div class="top-img">-->
-<!--    <div class="top-img-text">-->
-<!--        <div style="height:30vh;"></div>-->
-<!--        <div class="mdui-typo-display-3">三体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宇宙</div>-->
-<!--<!--        <div style="height:20px;"></div>-->
-<!--        <div class="mdui-typo"><h4>ThreeBody.Space</h4></div>-->
-<!--    </div>-->
-<!--<!--    <img src="/img/1.jpg" class="top-img-img">-->
-<!--    <div class="top-img-img"></div>-->
-<!--</div>-->
-
+<div class="music" id="music">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=416892104&auto=0&height=66"></iframe>
+</div>
 <div id="fullpage">
     <!--第一页 - 标题-->
     <div class="section " id="section_index">
@@ -115,8 +77,6 @@
             </h4></div>
 
     </div>
-
-    <!--    <script src="/sentence/sentence.php" defer></script>-->
 </div>
 
 <script type="text/javascript">

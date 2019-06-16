@@ -76,9 +76,6 @@ h2 {
 #section3 h1 {
     color: #000;
 }
-
-/*Adding background for the slides
-* --------------------------------------- */
 .video_div {
     padding-left: 20vw;
     padding-right: 20vw;
@@ -137,4 +134,22 @@ h2 {
     /*font-size:1.5em;*/
     /*color:#228DFF;*/
     /*font-family:Iceland;*/
+}
+.music{
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    z-index: 1;
+
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;
+    opacity: 0.5;
+}
+/**
+音乐层鼠标移入增加透明度
+ */
+.music:hover{
+    filter:alpha(Opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
 }
