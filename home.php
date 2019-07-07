@@ -83,6 +83,7 @@
     var myFullpage = new fullpage('#fullpage', {
         verticalCentered: false
     });
+
     load_text();
     function load_text() {
         $.ajax({
@@ -90,7 +91,7 @@
             async: true,
             type: 'GET',
             success: function (data) {
-                $('#good_text').text(data)
+                $('#good_text').text(data);
             }
         });
     }
