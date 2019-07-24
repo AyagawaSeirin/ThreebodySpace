@@ -90,7 +90,8 @@
             </h4></div>
         <div class="mdui-typo"><h5 style="color:white;">
                 起初无聊注册了这个看起来很有趣的域名，但不知道该做什么，浪费又觉得可惜。便挂了一个看起来很炫酷的提示页面，鸽着没有管了。但我没有想到的是，每天都有相当一部分访客访问，也有许多小伙伴加我提建议，我便决定把这个网站做完。<br>
-                空间有限，<a href="#">点击这里</a> 查看详情~<br>
+                空间有限，<a href="https://rmb.moe/other/94.html">点击这里</a> 查看详情~<br>
+                联系站长：<a href="http://wpa.qq.com/msgrd?v=3&uin=461514286&site=qq&menu=yes" target="_blank">QQ:461514286</a>
                 另外，站长个人博客：<a href="https://rmb.moe">rmb.moe</a>，欢迎参观~
             </h5></div>
 
