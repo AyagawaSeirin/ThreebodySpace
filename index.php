@@ -2,6 +2,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>欢迎来到 三体-宇宙</title>
+    <?php require_once("layout/head.php");?>
     <style type="text/css">
 
         * {
@@ -556,6 +557,9 @@
 
     })(window);
 
+</script>
+<script>
+    mdui.alert('欢迎来到三体·宇宙！<br>目前已经开发完毕，并全部上线！<br>保留首页样式，点击文字部分即可访问下一页~<br>推荐使用电脑访问，手机访问效果大打折扣<br>若有相关建议可在网页最后寻找作者联系方式~', '你好!!!');
 </script>
 
 </body>
