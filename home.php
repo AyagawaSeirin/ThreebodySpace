@@ -10,10 +10,10 @@
 <body>
 <?php if ($Mobile == false): ?>
     <div class="music" id="music">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
-                src="//music.163.com/outchain/player?type=2&id=416892104&auto=0&height=66"></iframe>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=416892104&auto=0&height=66"></iframe>
     </div>
-<?php endif; ?>
+<?php
+endif; ?>
 <div id="fullpage">
     <!--第一页 - 标题-->
     <div class="section " id="section_index">
@@ -43,8 +43,7 @@
             <div class="slide" id="section_video_slide2" style="padding-top:15vh;">
                 <div class="video_div">
                     <div class="mdui-video-container">
-                        <iframe src="//player.bilibili.com/player.html?aid=26206476&cid=44977752&page=1" scrolling="no"
-                                border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+                        <iframe src="//player.bilibili.com/player.html?aid=26206476&cid=44977752&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
                     </div>
                 </div>
             </div>
@@ -52,8 +51,7 @@
             <div class="slide" id="section_video_slide1" style="padding-top:15vh;">
                 <div class="video_div">
                     <div class="mdui-video-container">
-                        <iframe src="//player.bilibili.com/player.html?aid=20523785&cid=33561210&page=1" scrolling="no"
-                                border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+                        <iframe src="//player.bilibili.com/player.html?aid=20523785&cid=33561210&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
                     </div>
                 </div>
             </div>
@@ -92,7 +90,8 @@
                 起初无聊注册了这个看起来很有趣的域名，但不知道该做什么，浪费又觉得可惜。便挂了一个看起来很炫酷的提示页面，鸽着没有管了。但我没有想到的是，每天都有相当一部分访客访问，也有许多小伙伴加我提建议，我便决定把这个网站做完。<br>
                 空间有限，<a href="https://rmb.moe/other/94.html">点击这里</a> 查看详情~<br>
                 如果您有好的建议，请点击下方联系站长QQ或者进入上方链接留言回复~<br>
-                联系站长：<a href="http://wpa.qq.com/msgrd?v=3&uin=461514286&site=qq&menu=yes" target="_blank">QQ:461514286</a><br>
+                联系站长：<a href="http://wpa.qq.com/msgrd?v=3&uin=461514286&site=qq&menu=yes"
+                        target="_blank">QQ:461514286</a><br>
                 另外，站长个人博客：<a href="https://rmb.moe">rmb.moe</a>，欢迎参观~
             </h5></div>
 
@@ -103,7 +102,11 @@
             </h5></div>
     </div>
 </div>
-
+<?php
+if($Mobile == true){
+    echo "<script>mdui.alert('欢迎来到三体·宇宙！<br>目前已经开发完毕，并全部上线！<br>推荐使用电脑访问，手机访问效果大打折扣<br>若有相关建议可在网页最后寻找作者联系方式~', '你好!!!');</script>";
+}
+?>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         verticalCentered: false
@@ -114,7 +117,13 @@
     function load_text() {
         var $$ = mdui.JQ;
         $$.ajax({
-            url: "/sentence/sentence.php",
+            url: "/sentence/sentence.php?mobile=<?php
+                if($Mobile == true){
+                    echo "1";
+                } else {
+                    echo "0";
+                }
+                ?>",
             async: true,
             type: 'GET',
             success: function (data) {
