@@ -1,9 +1,10 @@
-<link rel="stylesheet" href="/mdui/css/mdui.min.css">
-    <script src="/mdui/js/mdui.min.js"></script>
-    <link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdn.pplin.cn/threebodyspace/mdui/css/mdui.min.css">
+    <script src="https://cdn.pplin.cn/threebodyspace/mdui/js/mdui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.pplin.cn/threebodyspace/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="/fullpage/fullpage.js"></script>
-    <link rel="stylesheet" href="/fullpage/fullpage.css">
+    <script src="https://cdn.pplin.cn/threebodyspace/fullpage/fullpage.js"></script>
+    <script src="https://cdn.pplin.cn/threebodyspace/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.pplin.cn/threebodyspace/fullpage/fullpage.css">
     <link rel="stylesheet" href="/css/lightfont.css">
 <script>
     var _hmt = _hmt || [];
