@@ -18,7 +18,7 @@ h1 {
 }
 
 #section_index {
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/1.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/1.jpg");
 }
 
 #section_index h1 {
@@ -29,7 +29,7 @@ h1 {
 }
 
 #section_introduce {
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/2.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/2.jpg");
     text-align: left;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -57,30 +57,30 @@ h2 {
 }
 
 #section_video_slide1 {
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/3.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/3.jpg");
     padding: 6% 0 0 0;
 }
 
 #section_video_slide2 {
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/4.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/4.jpg");
     padding: 6% 0 0 0;
 }
 
 #section_article{
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/5.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/5.png");
     text-align: left;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
 #section_good_text{
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/6.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/6.jpg");
     text-align: left;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 #section_about{
-    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/7.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@1.0/img/7.jpg");
     text-align: center;
     padding-left: 5vw;
     padding-right: 5vw;
