@@ -29,7 +29,7 @@ h1 {
 }
 
 #section_introduce {
-    background-image: url("/img/2.jpg");
+    background-image: url("https://cdn.jsdelivr.net/gh/AyagawaSeirin/ThreebodySpace@latest/img/2.jpg");
     text-align: left;
     padding-left: 5vw;
     padding-right: 5vw;
