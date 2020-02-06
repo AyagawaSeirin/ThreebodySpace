@@ -2,15 +2,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>欢迎来到 三体-宇宙</title>
-    <?php require_once("layout/head.php");
-    require_once './UA/Mobile_Detect.php';
-    $detect = new Mobile_Detect;
-    $Mobile = $detect->isMobile();
-    if($Mobile == true){
-        echo "<script>location.href='/home.php'</script>";
-        return;
-    }
-    ?>
+    <link rel="stylesheet" href="/mdui/css/mdui.min.css">
+    <script src="/mdui/js/mdui.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/fullpage/fullpage.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/fullpage/fullpage.css">
+    <link rel="stylesheet" href="/css/lightfont.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0fcdd431c6230ad57319d7beb9142f79";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
     <style type="text/css">
 
         * {
@@ -567,7 +574,29 @@
 
 </script>
 <script>
-    mdui.alert('欢迎来到三体·宇宙！<br>目前已经开发完毕，并全部上线！<br>保留首页样式，点击文字部分即可访问下一页~<br>若有相关建议可在网页最后寻找作者联系方式~', '你好!!!');
+    var browser = {
+        versions: function() {
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {
+                trident: u.indexOf('Trident') > -1,
+                presto: u.indexOf('Presto') > -1,
+                webKit: u.indexOf('AppleWebKit') > -1,
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                iPhone: u.indexOf('iPhone') > -1,
+                iPad: u.indexOf('iPad') > -1,
+                webApp: u.indexOf('Safari') == -1
+            };
+        } (),
+        language: (navigator.browserLanguage || navigator.language).toLowerCase()
+    }
+    if(browser.versions.mobile){
+        window.location.href = "/home.html";
+    } else {
+        alert('欢迎来到三体·宇宙！\n目前已经开发完毕，并全部上线！\n点击文字部分即可访问下一页~\n若有相关建议可在网页最后寻找作者联系方式~');
+    }
 </script>
 
 </body>
