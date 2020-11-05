@@ -12,4 +12,4 @@
 
 文字资料采集于网络
 
-更多内容请访问：<https://qwq.best/other/94.html>
+更多内容请访问：<https://owomoe.net/other/94.html>
